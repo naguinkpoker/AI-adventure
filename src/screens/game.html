@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/fonts.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/components/buttons.css">
+  <link rel="stylesheet" href="../styles/pages/game.css">
+  <link rel="stylesheet" href="../styles/libs/font-awesome/icons.css">
+
+  <title>AI-Adventure</title>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div>
+      <div class="control">
+        <div>
+          <button id="to-menu" class="control-button" title="Back to menu" onclick="window.API.send('change-screen', 'menu')">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+
+<!--          <button id="to-settings" class="control-button" disabled title="Coming soon...">-->
+<!--            <i class="fa-solid fa-gear"></i>-->
+<!--          </button>-->
+
+          <button id="fix" class="control-button" title="Fix game" onclick="alert('Session fixed!'); window.location.reload()">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </button>
+        </div>
+
+        <button id="clean-story-button" class="control-button">
+          <i class="fa-solid fa-feather"></i> Rewrite story
+        </button>
+      </div>
+      <div class="text">
+        <div id="paragraph">
+          <div>
+            <h2>
+              <i class="fa-solid fa-comment-dots"></i>
+              Current situation
+            </h2>
+            <div class="loader">
+              <img src="../assets/images/loading.svg" alt="Loading">
+            </div>
+            <p></p>
+          </div>
+          <div>
+            <h2>
+              <i class="fa-solid fa-cloud-sun"></i>
+              Current environment
+            </h2>
+            <div class="loader">
+              <img src="../assets/images/loading.svg" alt="Loading">
+            </div>
+            <p></p>
+          </div>
+          <div>
+            <h2>
+              <i class="fa-regular fa-flag"></i>
+              Current main goal of character
+            </h2>
+            <div class="loader">
+              <img src="../assets/images/loading.svg" alt="Loading">
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="illustration">
+        <div class="loader">
+          <img src="../assets/images/loading.svg" alt="Loading">
+        </div>
+        <img src="../assets/images/menu_background.png" alt="AI generated illustration">
+      </div>
+      <div class="answers">
+        <button class="control-button" data-symbol="A">
+          <div class="loader">
+            <img src="../assets/images/loading.svg" alt="Loading">
+          </div>
+          <span></span>
+        </button>
+        <button class="control-button" data-symbol="B">
+          <div class="loader">
+            <img src="../assets/images/loading.svg" alt="Loading">
+          </div>
+          <span></span>
+        </button>
+        <button class="control-button" data-symbol="C">
+          <div class="loader">
+            <img src="../assets/images/loading.svg" alt="Loading">
+          </div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/game/fillScreen.js"></script>
+  <script src="../scripts/game/round.js"></script>
+  <script src="../scripts/game/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/fonts.css">
+
+  <link rel="stylesheet" href="../styles/pages/menu.css">
+  <link rel="stylesheet" href="../styles/libs/font-awesome/icons.css">
+
+  <title>AI-Adventure</title>
+</head>
+<body>
+<div id="wrapper">
+  <main>
+    <div id="title">
+      <h1>
+        <span class="c1">A</span>
+        <span class="c2">I</span>
+        <span class="c3">-</span>
+        <span class="c4">A</span>
+        <span class="c5">D</span>
+        <span class="c6">V</span>
+        <span class="c7">E</span>
+        <span class="c8">N</span>
+        <span class="c9">T</span>
+        <span class="c10">U</span>
+        <span class="c11">R</span>
+        <span class="c12">E</span>
+      </h1>
+    </div>
+    <div class="menu-button">
+      <a class="button" onclick="window.API.send('change-screen', 'profiles')"><span>Play</span></a>
+      <div>
+        <a class="button" onclick="window.API.send('change-screen', 'about')"><span>About game</span></a>
+        <a class="button" onclick="window.API.send('change-screen', 'settings')"><span><i class="fa-solid fa-gear"></i></span></a>
+      </div>
+      <a class="button" onclick="window.API.send('quit')"><span>Quit</span></a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

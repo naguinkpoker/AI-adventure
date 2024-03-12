@@ -1,0 +1,21 @@
+.control-button {
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    user-select: none;
+}
+.control-button[disabled] {
+    cursor: not-allowed;
+    color: #737373;
+    background: rgba(72, 72, 72, 0.8);
+}
+.control-button:not([disabled]):hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.control-button:not([disabled]):active {
+    background-color: rgba(0, 0, 0, 0.9);
+}

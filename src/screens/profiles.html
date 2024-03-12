@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/fonts.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/pages/profiles.css">
+  <link rel="stylesheet" href="../styles/components/buttons.css">
+  <link rel="stylesheet" href="../styles/libs/font-awesome/icons.css">
+
+  <title>AI-Adventure</title>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div>
+      <h1>Profiles</h1>
+
+      <div class="container">
+        <button data-id="1">
+          <h3>Save #1</h3>
+          <span></span>
+        </button>
+        <button data-id="2">
+          <h3>Save #2</h3>
+          <span></span>
+        </button>
+        <button data-id="3">
+          <h3>Save #3</h3>
+          <span></span>
+        </button>
+        <button data-id="4">
+          <h3>Save #4</h3>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <button class="control-button" onclick="window.API.send('change-screen', 'menu')">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+  </div>
+
+  <script src="../scripts/profiles.js"></script>
+</body>
+</html>

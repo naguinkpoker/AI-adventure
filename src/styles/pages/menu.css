@@ -1,0 +1,146 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-button {
+    width: 25vw;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7.8vw;
+    position: absolute;
+    margin-top: 5.4vh;
+    margin-right: 2.6vw;
+}
+
+.menu-button>div {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-button>div>a:nth-child(1) {
+    width: calc(100% - 4.7vw - 20px);
+}
+.menu-button>div>a:nth-child(2) {
+    width: 4.7vw;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    height: 4.7vw;
+    line-height: 4.7vw;
+    border: none;
+    color: black;
+    font-size: 2.6vw;
+    font-weight: bold;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 5.4vh;
+    font-family: "MenuFont";
+    border-radius: 5px;
+    transition: font-size 0.25s ease-in-out;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: rgba(230, 89, 90, 0.7);
+}
+
+.button:hover {
+    transform: scale(0.9);
+    border-radius: 2.1vw;
+    color: black;
+    background-color: transparent;
+}
+.button:hover>span {
+    transform: scale(0.2);
+}
+
+#wrapper {
+    background: url(../../assets/images/menu_background.png) no-repeat center / cover;
+}
+
+#title {
+    font-size: 2.1vw;
+    position: absolute;
+    transform-origin: bottom;
+    left: 70vw;
+    top: -5vh;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+
+#title > h1 span {
+    position: absolute;
+    height: 41.7vw;
+    width: 15.6vw;
+    left: 5.2vw;
+    top: 5.2vw;
+    display: inline-block;
+    transform-origin: bottom;
+}
+
+#title > h1 {
+    position: relative;
+}
+
+.c1 {
+    transform: rotate(-72deg);
+    color: blueviolet;
+}
+
+.c2 {
+    transform: rotate(-66deg);
+    color: indigo;
+}
+
+.c3 {
+    transform: rotate(-60deg);
+    color: blue;
+}
+
+.c4 {
+    transform: rotate(-54deg);
+    color: green;
+}
+
+.c5 {
+    transform: rotate(-48deg);
+    color: yellow;
+}
+
+.c6 {
+    transform: rotate(-42deg);
+    color: orange;
+}
+
+.c7 {
+    transform: rotate(-36deg);
+    color: red;
+}
+
+.c8 {
+    transform: rotate(-30deg);
+    color: purple;
+}
+
+.c9 {
+    transform: rotate(-24deg);
+    color: goldenrod;
+}
+
+.c10 {
+    transform: rotate(-18deg);
+    color: teal;
+}
+
+.c11 {
+    transform: rotate(-12deg);
+    color: deepskyblue;
+}
+
+.c12 {
+    transform: rotate(-6deg);
+    color: deeppink;
+}

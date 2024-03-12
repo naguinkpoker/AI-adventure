@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.github
+.idea
+app_data.json
+package-lock.json
+
+out/

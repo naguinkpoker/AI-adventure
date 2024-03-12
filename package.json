@@ -1,0 +1,39 @@
+{
+  "name": "ai-adventures",
+  "version": "1.0.0",
+  "description": "ChatGPT Novel",
+  "main": "./dist/src/index.js",
+  "author": "ITs Easy Team",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "copy-files": "copyfiles --exclude \"**/*.ts\" src/**/* dist/",
+    "build": "npm run copy-files && tsc",
+    "watch": "tsc -w",
+    "lint": "eslint -c .eslintrc --ext .ts ./src",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "@types/google-translate-api": "^2.3.2",
+    "@types/lokijs": "^1.5.8",
+    "@types/node": "^18.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "copyfiles": "^2.4.1",
+    "css-loader": "^6.8.1",
+    "electron": "^23.1.1",
+    "eslint": "^8.41.0",
+    "eslint-plugin-import": "^2.27.5",
+    "typescript": "~4.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "google-translate-api-x": "^10.6.7",
+    "lokijs": "^1.5.12"
+  }
+}

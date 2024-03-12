@@ -1,0 +1,134 @@
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    width: 100%;
+    height: 100%;
+}
+.loader>img {
+    width: 15%;
+    height: 15%;
+
+    min-width: 4.25rem;
+    min-height: 4.25rem;
+
+    user-select: none;
+}
+
+
+
+#wrapper {
+    display: flex;
+    background: #1A1A1D;
+}
+
+#wrapper>div {
+    width: 50%;
+}
+
+#wrapper>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#wrapper>div:nth-child(1)>.control {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#wrapper>div:nth-child(1)>.control #to-settings {
+    width: 64px;
+    height: 64px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#wrapper>div:nth-child(1)>.control #to-menu, #wrapper>div:nth-child(1)>.control #fix {
+    width: 64px;
+    height: 64px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#wrapper>div:nth-child(1)>.control #clean-story-button {
+    width: 192px;
+    height: 64px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#wrapper>div:nth-child(1)>.text {
+    position: relative;
+    padding: 25px;
+    height: 100%;
+}
+#wrapper>div:nth-child(1)>.text>#paragraph {
+    height: calc(100% - 64px);
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+#wrapper>div:nth-child(1)>.text>#paragraph>div>h2 {
+    font-family: "MenuFont";
+    font-weight: 100;
+    font-size: 2.75rem;
+    color: white;
+}
+#wrapper>div:nth-child(1)>.text>#paragraph>div>.loader {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+}
+#wrapper>div:nth-child(1)>.text>#paragraph>div>p {
+    font-size: 1.5rem;
+    font-family: "Calibri";
+    color: white;
+}
+
+#wrapper>div:nth-child(2)>.illustration {
+    position: relative;
+
+    width: 100%;
+    height: 60%;
+}
+#wrapper>div:nth-child(2)>.illustration>img:not(.loader) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+#wrapper>div:nth-child(2)>.answers {
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+}
+#wrapper>div:nth-child(2)>.answers>button {
+    width: 100%;
+    height: calc((100% - 30px) / 3);
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+#wrapper>div:nth-child(2)>.answers>button:not(:last-child) {
+    margin-bottom: 15px;
+}
